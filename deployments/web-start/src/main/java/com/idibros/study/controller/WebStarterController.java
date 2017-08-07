@@ -1,6 +1,5 @@
 package com.idibros.study.controller;
 
-import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -23,5 +22,21 @@ public class WebStarterController {
     public String postAction(@RequestParam(value = "actionValue", required = false, defaultValue = "")String actionValue, Model model) {
         model.addAttribute("actionValue", actionValue);
         return "postAction";
+    }
+
+    @RequestMapping("/login")
+    public String login() {
+        return "login";
+    }
+
+    @PostMapping("/login")
+    public String afterLogin() {
+        return "index";
+    }
+
+    @RequestMapping("/login-error")
+    public String loginError(Model model) {
+        model.addAttribute("loginError", true);
+        return "login";
     }
 }

@@ -75,3 +75,7 @@ deployments/web-start/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson
 deployments/web-start/.idea/libraries/Gradle__nz_net_ultraq_thymeleaf_thymeleaf_layout_dialect_1_4_0.xml
 deployments/web-start/settings.gradle
 deployments/web-start/src/main/webapp/index.jsp
+deployments/web-start/.idea/libraries/Gradle__aopalliance_aopalliance_1_0.xml
+deployments/web-start/.idea/libraries/Gradle__org_springframework_security_spring_security_config_4_2_3_RELEASE.xml
+deployments/web-start/.idea/libraries/Gradle__org_springframework_security_spring_security_core_4_2_3_RELEASE.xml
+deployments/web-start/.idea/libraries/Gradle__org_springframework_security_spring_security_web_4_2_3_RELEASE.xml
