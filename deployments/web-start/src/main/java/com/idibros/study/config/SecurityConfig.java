@@ -22,9 +22,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/login*").anonymous()
                 .anyRequest().authenticated()
                 .and()
-                .formLogin().loginPage("/login").failureUrl("/login-error")
-                .and()
-                .csrf().csrfTokenRepository(csrfTokenRepository());
+                .formLogin().loginPage("/login").defaultSuccessUrl("/index", true).failureUrl("/login-error");
     }
 
     @Autowired

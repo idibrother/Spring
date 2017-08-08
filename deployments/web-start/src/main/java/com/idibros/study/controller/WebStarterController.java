@@ -29,11 +29,6 @@ public class WebStarterController {
         return "login";
     }
 
-    @PostMapping("/login")
-    public String afterLogin() {
-        return "index";
-    }
-
     @RequestMapping("/login-error")
     public String loginError(Model model) {
         model.addAttribute("loginError", true);
